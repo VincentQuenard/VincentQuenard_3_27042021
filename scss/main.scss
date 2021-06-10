@@ -18,6 +18,8 @@ a:link
 $couleur_primaire : #9356DC;
 $couleur_secondaire : #FF79DA;
 $couleur_tertiaire : #99E2D0;
+$couleur_shadow : #e2e2e2;
+$couleur_background : #F6F6F6;
 
 body{
   font-family: "Roboto", sans-serif ;
@@ -49,7 +51,7 @@ body{
 
 .reservation{
   padding: 30px;
-  background-color: #F6F6F6;
+  background-color: $couleur_background;
   h1, p{
     text-align: center;
   }
@@ -73,7 +75,7 @@ body{
   background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
   color: white;
   border: none;
-  box-shadow: 3px 5px 5px #e2e2e2;
+  box-shadow: 3px 5px 5px $couleur_shadow;
 
 }
 
@@ -89,12 +91,11 @@ body{
 
     .choix{
       display: flex;
-      border: #f2f2f2 solid 2px;
       border-radius: 20px;
       height: 50px;
       width: 320px;
       align-items: center;  
-      background-color: #F6F6F6;
+      background-color: $couleur_background;
       margin-bottom: 20px;
       box-shadow: 3px 5px 5px #e2e2e2;
 
@@ -120,4 +121,47 @@ body{
       }
    }
   }
+}
+
+
+.restaurants{
+  
+  background-color: $couleur_background;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+
+  .flyers{
+    display: flex;
+    flex-direction: column;
+    
+  
+.flyer{
+ 
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  
+
+
+
+
+  .flyer_descrip{
+    position: relative;
+  }
+
+    .flyer_descrip_favorite{
+      position: absolute;
+      font-size: 1.5rem;
+        top: 50%;
+        left: 80%;
+    }
+  }
+}
+}
+.flyer .flyer_photo img {
+  max-width: 100%;
+  height: auto;
 }

@@ -77,7 +77,6 @@ body {
 }
 .fonctionnement .fonctionnement_choix .choix {
   display: flex;
-  border: #f2f2f2 solid 2px;
   border-radius: 20px;
   height: 50px;
   width: 320px;
@@ -104,6 +103,38 @@ body {
 }
 .fonctionnement .fonctionnement_choix .choix .description {
   font-weight: bold;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  padding: 20px 10px 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .flyers {
+  display: flex;
+  flex-direction: column;
+}
+.restaurants .flyers .flyer {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.restaurants .flyers .flyer .flyer_descrip {
+  position: relative;
+}
+.restaurants .flyers .flyer .flyer_descrip_favorite {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 80%;
+}
+
+.flyer .flyer_photo img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
