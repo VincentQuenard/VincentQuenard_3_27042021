@@ -1,0 +1,12 @@
+.localisation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    height: 50px;
+    background-color: #EAEAEA;
+    
+    .fa-map-marker-alt{
+      padding-right: 10px;
+    }
+  }
