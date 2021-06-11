@@ -1,25 +1,8 @@
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-a:link 
-{ 
- text-decoration:none; 
- color: black;
-} 
+@import "./base/normalize";
+@import "./utils/variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 
-/*Couleurs du site*/
-$couleur_primaire : #9356DC;
-$couleur_secondaire : #FF79DA;
-$couleur_tertiaire : #99E2D0;
-$couleur_shadow : #e2e2e2;
-$couleur_background : #F6F6F6;
 
 body{
   font-family: "Roboto", sans-serif ;
@@ -50,14 +33,14 @@ body{
 }
 
 .reservation{
-  padding: 30px;
+  padding: 10px 30px 50px 30px;
   background-color: $couleur_background;
   h1, p{
     text-align: center;
   }
   h1{
     font-size: 1.5rem;
-    padding: 2rem;
+    padding: 20px;
   }
   p{
     margin-bottom: 30px;
@@ -82,7 +65,7 @@ body{
 .fonctionnement{
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
   margin-left: 20px;
 
   .fonctionnement_choix{
@@ -92,12 +75,12 @@ body{
     .choix{
       display: flex;
       border-radius: 20px;
-      height: 50px;
+      height: 60px;
       width: 320px;
       align-items: center;  
       background-color: $couleur_background;
       margin-bottom: 20px;
-      box-shadow: 3px 5px 5px #e2e2e2;
+      box-shadow: 3px 5px 5px $couleur_shadow;
 
 
       .nombre{
@@ -127,41 +110,81 @@ body{
 .restaurants{
   
   background-color: $couleur_background;
-  padding: 20px 10px 20px 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 0px 10px 50px 10px;
+
+  h2{
+    padding: 30px 0 30px 0;
+  }
+}
+
+
 
   .flyers{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    row-gap: 20px;
+  }
     
   
 .flyer{
- 
-  display: flex;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 3px 5px 5px $couleur_shadow;
   
+  
+  .flyer_nouveau {
+    background: $couleur_fond_nouveau;
+    color: $couleur_police_nouveau;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    
+  }
 
+  }
+  
+  
+.flyer_photo{
+  height: 180px;
 
-
-
+img{
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+}
   .flyer_descrip{
     position: relative;
+    padding: 20px;
+    font-size: 0.8rem;
+
+    h3{
+      padding-bottom: 10px;
+    }
   }
 
     .flyer_descrip_favorite{
       position: absolute;
       font-size: 1.5rem;
-        top: 50%;
+        top: 30%;
         left: 80%;
     }
-  }
-}
-}
-.flyer .flyer_photo img {
-  max-width: 100%;
-  height: auto;
+  
+
+    
+
+
+
+
+
+footer{
+  
+  background-color: #404040;
+  color: white;
+
+
 }

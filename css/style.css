@@ -38,7 +38,7 @@ body {
 }
 
 .reservation {
-  padding: 30px;
+  padding: 10px 30px 50px 30px;
   background-color: #F6F6F6;
 }
 .reservation h1, .reservation p {
@@ -46,7 +46,7 @@ body {
 }
 .reservation h1 {
   font-size: 1.5rem;
-  padding: 2rem;
+  padding: 20px;
 }
 .reservation p {
   margin-bottom: 30px;
@@ -63,13 +63,13 @@ body {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
   border: none;
-  box-shadow: 3px 5px 5px #e2e2e2;
+  box-shadow: 3px 5px 5px #dadada;
 }
 
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding: 50px 0 50px 0;
   margin-left: 20px;
 }
 .fonctionnement .fonctionnement_choix {
@@ -78,12 +78,12 @@ body {
 .fonctionnement .fonctionnement_choix .choix {
   display: flex;
   border-radius: 20px;
-  height: 50px;
+  height: 60px;
   width: 320px;
   align-items: center;
   background-color: #F6F6F6;
   margin-bottom: 20px;
-  box-shadow: 3px 5px 5px #e2e2e2;
+  box-shadow: 3px 5px 5px #dadada;
 }
 .fonctionnement .fonctionnement_choix .choix .nombre {
   display: flex;
@@ -107,34 +107,63 @@ body {
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 20px 10px 20px 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 0px 10px 50px 10px;
 }
-.restaurants .flyers {
-  display: flex;
-  flex-direction: column;
+.restaurants h2 {
+  padding: 30px 0 30px 0;
 }
-.restaurants .flyers .flyer {
-  display: flex;
+
+.flyers {
+  display: grid;
+  row-gap: 20px;
+}
+
+.flyer {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  margin-bottom: 20px;
-}
-.restaurants .flyers .flyer .flyer_descrip {
   position: relative;
+  box-shadow: 3px 5px 5px #dadada;
 }
-.restaurants .flyers .flyer .flyer_descrip_favorite {
+.flyer .flyer_nouveau {
+  background: #a9e0d1;
+  color: #3b8468;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.flyer_photo {
+  height: 180px;
+}
+.flyer_photo img {
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.flyer_descrip {
+  position: relative;
+  padding: 20px;
+  font-size: 0.8rem;
+}
+.flyer_descrip h3 {
+  padding-bottom: 10px;
+}
+
+.flyer_descrip_favorite {
   position: absolute;
   font-size: 1.5rem;
-  top: 50%;
+  top: 30%;
   left: 80%;
 }
 
-.flyer .flyer_photo img {
-  max-width: 100%;
-  height: auto;
+footer {
+  background-color: #404040;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
