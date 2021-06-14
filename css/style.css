@@ -108,6 +108,17 @@ body {
   background-color: #FAEAF0;
 }
 
+@media (min-width: 770px) {
+  .fonctionnement h2 {
+    text-align: center;
+  }
+  .fonctionnement .fonctionnement_choix {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+}
 .restaurants {
   background-color: #F6F6F6;
   padding: 0px 10px 50px 10px;
@@ -119,6 +130,7 @@ body {
 .flyers {
   display: grid;
   row-gap: 20px;
+  justify-content: center;
 }
 
 .flyer {
@@ -127,6 +139,7 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 3px 5px 5px #dadada;
+  width: 340px;
 }
 .flyer .flyer_nouveau {
   background: #a9e0d1;
@@ -146,6 +159,8 @@ body {
   max-width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
+  height: 180px;
+  width: 360px;
 }
 
 .flyer_descrip {
@@ -164,6 +179,13 @@ body {
   left: 80%;
 }
 
+@media (min-width: 770px) {
+  .flyers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 footer {
   background-color: #404040;
   color: white;
@@ -180,6 +202,14 @@ footer .footer_click {
 
 footer a:visited, footer a:link, footer a:active {
   color: white;
+}
+
+@media (min-width: 770px) {
+  .footer_liens, .footer_omf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+footer{
+  
+    background-color: $couleur_background_footer;
+    color: $couleur_blanche;
+    padding: 20px;
+  
+    .footer_omf{
+      padding-bottom: 30px;
+      font-family: Shrikhand;
+      font-size: 1.2rem;
+    }
+  
+  .footer_click{
+    padding-bottom: 10px;
+  }
+  
+  }
+  footer a:visited, footer a:link, footer a:active{
+    color: $couleur_blanche;
+  }
+  
+  
+  @media (min-width: 770px){
+    .footer_liens, .footer_omf {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+  
+    }
+  }

@@ -1,0 +1,77 @@
+
+.restaurants{
+  
+    background-color: $couleur_background;
+    padding: 0px 10px 50px 10px;
+  
+    h2{
+      padding: 30px 0 30px 0;
+    }
+  }
+  
+    .flyers{
+      display: grid;
+      row-gap: 20px;
+      justify-content: center;
+    }
+      
+  .flyer{
+    background-color: $couleur_blanche;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 5px 5px $couleur_shadow;
+    width: 340px;
+    
+    
+    .flyer_nouveau {
+      background: $couleur_fond_nouveau;
+      color: $couleur_police_nouveau;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 5px;
+      border-radius: 5px;
+      font-weight: bold;
+      
+    }
+   }
+    
+    
+  .flyer_photo{
+    height: 180px;
+  
+  img{
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    height: 180px;
+    width: 360px;
+  }
+  }
+    .flyer_descrip{
+      position: relative;
+      padding: 20px;
+      font-size: 0.8rem;
+  
+      h3{
+        padding-bottom: 10px;
+      }
+    }
+  
+      .flyer_descrip_favorite{
+        position: absolute;
+        font-size: 1.5rem;
+          top: 30%;
+          left: 80%;
+      }
+    
+      @media (min-width: 770px){
+      .flyers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+  
+      }
+  }
