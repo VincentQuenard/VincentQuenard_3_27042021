@@ -3,6 +3,10 @@
   
     background-color: $couleur_background;
     padding: 0px 10px 50px 10px;
+
+    a:visited, footer a:link, footer a:active{
+      color: $couleur_noire;
+    }
   
     h2{
       padding: 30px 0 30px 0;
