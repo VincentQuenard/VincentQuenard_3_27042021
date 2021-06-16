@@ -125,7 +125,7 @@ body {
   background-color: #F6F6F6;
   padding: 0px 10px 50px 10px;
 }
-.restaurants a:visited, .restaurants footer a:link, .restaurants footer a:active {
+.restaurants a:visited, .restaurants a:link, .restaurants a:active {
   color: black;
 }
 .restaurants h2 {
@@ -170,7 +170,7 @@ body {
 .flyer_descrip {
   position: relative;
   padding: 20px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .flyer_descrip h3 {
   padding-bottom: 10px;
@@ -188,6 +188,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  .menu_plat {
+    padding-right: 10px;
   }
 }
 footer {
@@ -284,6 +288,11 @@ footer a:visited, footer a:link, footer a:active {
   margin: 10px 0 20px 0;
   overflow: hidden;
 }
+.menu_contenu .menu_plat {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .menu_contenu .menu_prix {
   font-weight: bold;
   display: flex;
@@ -336,6 +345,10 @@ footer a:visited, footer a:link, footer a:active {
   }
   .description_menu .menu_contenu .menu_prix {
     align-items: center;
+  }
+
+  .photo_restaurant img {
+    height: 400px;
   }
 }
 
