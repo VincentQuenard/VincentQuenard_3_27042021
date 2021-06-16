@@ -13,10 +13,9 @@
         display: flex;
         border-radius: 20px;
         height: 60px;
-        width: 320px;
         align-items: center;  
         background-color: $couleur_background;
-        margin-bottom: 20px;
+        margin: 0 20px 20px 0;
         box-shadow: 3px 5px 5px $couleur_shadow;
   
   
@@ -53,11 +52,17 @@
       h2{
         text-align: center;
       }
+
+      .choix{
+        padding-right: 20px;
+
+      }
       .fonctionnement_choix{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         padding-top: 50px;
+       
       }
     }
   }

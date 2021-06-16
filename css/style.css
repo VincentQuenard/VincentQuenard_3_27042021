@@ -79,10 +79,9 @@ body {
   display: flex;
   border-radius: 20px;
   height: 60px;
-  width: 320px;
   align-items: center;
   background-color: #F6F6F6;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 0;
   box-shadow: 3px 5px 5px #dadada;
 }
 .fonctionnement .choix .nombre {
@@ -111,6 +110,9 @@ body {
 @media (min-width: 770px) {
   .fonctionnement h2 {
     text-align: center;
+  }
+  .fonctionnement .choix {
+    padding-right: 20px;
   }
   .fonctionnement .fonctionnement_choix {
     display: flex;
@@ -142,7 +144,6 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 3px 5px 5px #dadada;
-  width: 340px;
 }
 .flyer .flyer_nouveau {
   background: #a9e0d1;
@@ -234,7 +235,6 @@ footer a:visited, footer a:link, footer a:active {
 
 .nom_restaurant {
   display: flex;
-  padding-bottom: 30px;
   justify-content: space-between;
 }
 .nom_restaurant h1 {
@@ -252,6 +252,9 @@ footer a:visited, footer a:link, footer a:active {
   position: relative;
   margin-top: -70px;
   padding: 30px 10px 30px 10px;
+}
+.menu .contenu_menu {
+  margin-top: 50px;
 }
 
 .menu_sorte h2 {
@@ -294,12 +297,46 @@ footer a:visited, footer a:link, footer a:active {
   border-radius: 30px;
   height: 60px;
   width: 180px;
-  margin: auto;
+  margin: 50px auto 50px auto;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
   border: none;
   box-shadow: 3px 5px 5px #dadada;
   font-size: large;
+}
+
+@media (min-width: 770px) {
+  .nom_restaurant {
+    justify-content: space-around;
+  }
+  .nom_restaurant h1 {
+    font-family: "Shrikhand";
+    font-size: 4rem;
+  }
+  .nom_restaurant .fa-heart {
+    font-size: 50px;
+  }
+
+  .menu {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .description_menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .description_menu .menu_sorte {
+    align-self: center;
+    margin-left: 15px;
+  }
+  .description_menu .menu_contenu {
+    width: 100%;
+    margin: 30px;
+  }
+  .description_menu .menu_contenu .menu_prix {
+    align-items: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

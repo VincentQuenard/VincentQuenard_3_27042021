@@ -23,7 +23,6 @@
 
 .nom_restaurant{
     display: flex;
-    padding-bottom: 30px;
     justify-content: space-between;
     h1{
         font-family: "Shrikhand";
@@ -41,6 +40,10 @@
     position: relative;
     margin-top: -70px;
     padding: 30px 10px 30px 10px;
+
+    .contenu_menu{
+        margin-top: 50px;
+    }
 
 }
 
@@ -93,7 +96,7 @@
     border-radius: 30px;
     height: 60px;
     width: 180px;
-    margin: auto;
+    margin: 50px auto 50px auto;
     background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
     color: $couleur_blanche;
     border: none;
@@ -102,3 +105,43 @@
 }
   
 
+@media (min-width: 770px){
+
+    .nom_restaurant{
+        justify-content: space-around;
+        h1 {
+        font-family: "Shrikhand";
+        font-size: 4rem;
+
+    }
+    .fa-heart {
+        font-size: 50px;}
+}
+
+    .menu{
+        border-radius: 0;
+        margin: 0;
+    }
+    .description_menu{
+        display: flex;
+        justify-content: space-between;
+
+        .menu_sorte{
+            align-self: center;
+            margin-left: 15px;
+        }
+
+
+        .menu_contenu{
+            width: 100%;
+            margin: 30px;
+
+            .menu_prix{
+                align-items: center;
+            }
+        }
+    }
+    .menu_sorte{
+
+    }
+}
