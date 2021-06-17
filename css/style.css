@@ -65,6 +65,10 @@ body {
   border: none;
   box-shadow: 3px 5px 5px #dadada;
 }
+.btn1:hover {
+  opacity: 0.9;
+  box-shadow: 3px 5px 5px #b9b9b9;
+}
 
 .fonctionnement {
   display: flex;
@@ -312,6 +316,10 @@ footer a:visited, footer a:link, footer a:active {
   border: none;
   box-shadow: 3px 5px 5px #dadada;
   font-size: large;
+}
+.btn_menu:hover {
+  opacity: 0.9;
+  box-shadow: 3px 5px 5px #b9b9b9;
 }
 
 @media (min-width: 770px) {

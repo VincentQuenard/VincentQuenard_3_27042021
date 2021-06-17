@@ -24,6 +24,13 @@
     color: $couleur_blanche;
     border: none;
     box-shadow: 3px 5px 5px $couleur_shadow;
-  
+
+
+    &:hover{
+      opacity: 0.9;
+      box-shadow: 3px 5px 5px $couleur_hover_btn;
+    }
   }
+
+  
   
