@@ -79,10 +79,14 @@
     
     
     .menu_plat {
+        width: 80%;
+        
+
+        h3 ,p{
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        
+        }
     }
     
     .menu_prix{
@@ -154,6 +158,11 @@
             }
         }
     }
-    .photo_restaurant img {
-        height: 400px;}
+    .photo_restaurant{
+        height: 400px;
+
+        img{
+            height: 100%;
+        }
+    }
 }

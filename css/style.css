@@ -88,6 +88,9 @@ body {
   margin: 0 20px 20px 0;
   box-shadow: 3px 5px 5px #dadada;
 }
+.fonctionnement .choix:hover {
+  background-color: #FAEAF0;
+}
 .fonctionnement .choix .nombre {
   display: flex;
   border-radius: 50%;
@@ -106,9 +109,6 @@ body {
 }
 .fonctionnement .choix .description {
   font-weight: bold;
-}
-.fonctionnement .choix--rose {
-  background-color: #FAEAF0;
 }
 
 @media (min-width: 770px) {
@@ -293,6 +293,9 @@ footer a:visited, footer a:link, footer a:active {
   overflow: hidden;
 }
 .menu_contenu .menu_plat {
+  width: 80%;
+}
+.menu_contenu .menu_plat h3, .menu_contenu .menu_plat p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -355,8 +358,11 @@ footer a:visited, footer a:link, footer a:active {
     align-items: center;
   }
 
-  .photo_restaurant img {
+  .photo_restaurant {
     height: 400px;
+  }
+  .photo_restaurant img {
+    height: 100%;
   }
 }
 

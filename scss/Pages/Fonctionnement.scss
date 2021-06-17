@@ -17,6 +17,10 @@
         background-color: $couleur_background;
         margin: 0 20px 20px 0;
         box-shadow: 3px 5px 5px $couleur_shadow;
+
+        &:hover{
+          background-color: $couleur_btn_rose;
+        }
   
   
         .nombre{
@@ -40,9 +44,7 @@
         }
      
     }
-      .choix--rose{
-        background-color: $couleur_btn_rose;
-    }
+     
   }
   
   @media (min-width: 770px){
