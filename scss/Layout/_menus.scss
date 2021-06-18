@@ -79,7 +79,7 @@
     
     
     .menu_plat {
-        width: 80%;
+        width: 70%;
         
 
         h3 ,p{
@@ -94,6 +94,25 @@
         font-weight: bold;
         display: flex;
         align-items: flex-end;
+    }
+}
+.menu_check{
+    transform: translate(60px);
+    background-color: $couleur_tertiaire;
+    margin: -15px -15px -15px 10px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:active{
+        transform: translate(0);
+    }
+
+
+    .menu_check_icone{
+        color: $couleur_blanche;
+        font-size: x-large;
     }
 }
 

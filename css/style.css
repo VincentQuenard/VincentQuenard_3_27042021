@@ -294,7 +294,7 @@ footer a:visited, footer a:link, footer a:active {
   overflow: hidden;
 }
 .menu_contenu .menu_plat {
-  width: 80%;
+  width: 70%;
 }
 .menu_contenu .menu_plat h3, .menu_contenu .menu_plat p {
   white-space: nowrap;
@@ -305,6 +305,23 @@ footer a:visited, footer a:link, footer a:active {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
+}
+
+.menu_check {
+  transform: translate(60px);
+  background-color: #99E2D0;
+  margin: -15px -15px -15px 10px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu_check:active {
+  transform: translate(0);
+}
+.menu_check .menu_check_icone {
+  color: white;
+  font-size: x-large;
 }
 
 .btn_menu {
