@@ -111,9 +111,10 @@
     border: none;
     box-shadow: 3px 5px 5px $couleur_shadow;
     font-size: large;
+    transition: opacity 500ms;
 
     &:hover{
-        opacity: 0.9;
+        opacity: 0.85;
         box-shadow: 3px 5px 5px $couleur_hover_btn;
       }
 }
