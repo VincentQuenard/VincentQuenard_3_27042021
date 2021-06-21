@@ -254,6 +254,9 @@ footer a:visited, footer a:link, footer a:active {
   font-size: 25px;
   padding-top: 10px;
 }
+.nom_restaurant .fa-heart:hover {
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+}
 
 .menu {
   background-color: #F6F6F6;
@@ -292,6 +295,7 @@ footer a:visited, footer a:link, footer a:active {
   box-shadow: 3px 5px 5px #dadada;
   margin: 10px 0 20px 0;
   overflow: hidden;
+  animation: myAnim 2s ease-in-out forwards;
 }
 .menu_contenu .menu_plat {
   width: 70%;
@@ -300,6 +304,16 @@ footer a:visited, footer a:link, footer a:active {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .menu_contenu .menu_prix {
   font-weight: bold;

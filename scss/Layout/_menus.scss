@@ -31,6 +31,10 @@
     .fa-heart{
         font-size: 25px;
         padding-top: 10px;
+
+        &:hover{
+            background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
+        }
     }
 }
 
@@ -77,6 +81,7 @@
     margin: 10px 0 20px 0;
     overflow: hidden;
     
+    animation: myAnim 2s ease-in-out forwards;
     
     .menu_plat {
         width: 70%;
@@ -88,6 +93,17 @@
         text-overflow: ellipsis;
         }
     }
+    @keyframes myAnim {
+        0% {
+          opacity: 0;
+          transform: translateY(-40px);
+        }
+      
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
     
     .menu_prix{
         
