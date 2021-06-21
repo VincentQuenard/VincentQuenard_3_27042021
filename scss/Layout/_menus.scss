@@ -32,9 +32,12 @@
         font-size: 25px;
         padding-top: 10px;
 
+    }
+    .coeur{
         &:hover{
-            background-image: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
+            background: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
         }
+
     }
 }
 
@@ -81,7 +84,7 @@
     margin: 10px 0 20px 0;
     overflow: hidden;
     
-    animation: myAnim 2s ease-in-out forwards;
+    animation: slideMenu 2s ease-in-out forwards;
     
     .menu_plat {
         width: 70%;
@@ -93,7 +96,7 @@
         text-overflow: ellipsis;
         }
     }
-    @keyframes myAnim {
+    @keyframes slideMenu {
         0% {
           opacity: 0;
           transform: translateY(-40px);
@@ -113,7 +116,7 @@
     }
 }
 .menu_check{
-    transform: translate(60px);
+    
     background-color: $couleur_tertiaire;
     margin: -15px -15px -15px 10px;
     width: 50px;
@@ -121,9 +124,7 @@
     align-items: center;
     justify-content: center;
 
-    &:active{
-        transform: translate(0);
-    }
+   
 
 
     .menu_check_icone{

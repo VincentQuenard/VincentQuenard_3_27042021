@@ -254,8 +254,8 @@ footer a:visited, footer a:link, footer a:active {
   font-size: 25px;
   padding-top: 10px;
 }
-.nom_restaurant .fa-heart:hover {
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+.nom_restaurant .coeur:hover {
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
 .menu {
@@ -295,7 +295,7 @@ footer a:visited, footer a:link, footer a:active {
   box-shadow: 3px 5px 5px #dadada;
   margin: 10px 0 20px 0;
   overflow: hidden;
-  animation: myAnim 2s ease-in-out forwards;
+  animation: slideMenu 2s ease-in-out forwards;
 }
 .menu_contenu .menu_plat {
   width: 70%;
@@ -305,7 +305,7 @@ footer a:visited, footer a:link, footer a:active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@keyframes myAnim {
+@keyframes slideMenu {
   0% {
     opacity: 0;
     transform: translateY(-40px);
@@ -322,16 +322,12 @@ footer a:visited, footer a:link, footer a:active {
 }
 
 .menu_check {
-  transform: translate(60px);
   background-color: #99E2D0;
   margin: -15px -15px -15px 10px;
   width: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.menu_check:active {
-  transform: translate(0);
 }
 .menu_check .menu_check_icone {
   color: white;
