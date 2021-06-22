@@ -1,0 +1,78 @@
+
+.loader{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    position: fixed;
+    z-index: 200;
+    animation: apparition 0.2s 3s ease-in-out normal forwards;
+}
+
+@keyframes apparition {
+    from {
+      opacity: 100%;
+    }
+    to {
+      opacity: 0%;
+      visibility: hidden;
+    }
+  }
+
+  .loader_titre {
+    font-family: "Shrikhand";
+    color: $couleur_blanche;
+    font-size: 2rem;
+    letter-spacing:3px;
+    padding-bottom: 50px;
+  }
+
+
+  .LoaderBalls {
+	width: 180px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+    &__item1 {
+		$anim-ease: cubic-bezier(.6,.05,.15,.95);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: $couleur_primaire;
+        animation: balles 0.5s alternate infinite $anim-ease;
+    }
+
+    &__item2 {
+		$anim-ease: cubic-bezier(.6,.05,.15,.95);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: $couleur_secondaire;
+        animation: balles 0.3s alternate infinite $anim-ease;
+    }
+
+    &__item3 {
+		$anim-ease: cubic-bezier(.6,.05,.15,.95);
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: $couleur_tertiaire;
+        animation: balles 0.4s alternate infinite $anim-ease;
+    }
+}
+
+@keyframes balles {
+
+	0% {
+		transform: translate3d(0, 10px, 0) scale(1.2, 0.85);
+	}
+
+	100% {
+		transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
+	}
+}
+
