@@ -83,13 +83,15 @@
     box-shadow: 3px 5px 5px $couleur_shadow;
     margin: 10px 0 20px 0;
     overflow: hidden;
+    position: relative;
+    &:hover .menu_check{
+        transform: translateX(0px);
+    }
     
     animation: slideMenu 2s ease-in-out forwards;
     
     .menu_plat {
         width: 70%;
-        
-
         h3 ,p{
         white-space: nowrap;
         overflow: hidden;
@@ -118,18 +120,23 @@
 .menu_check{
     
     background-color: $couleur_tertiaire;
-    margin: -15px -15px -15px 10px;
-    width: 50px;
+    width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    transition-duration: 600ms;
+    transform: translateX(60px);
 
    
 
 
     .menu_check_icone{
         color: $couleur_blanche;
-        font-size: x-large;
+        font-size: x-large;    
     }
 }
 

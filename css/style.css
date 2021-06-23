@@ -295,7 +295,11 @@ footer a:visited, footer a:link, footer a:active {
   box-shadow: 3px 5px 5px #dadada;
   margin: 10px 0 20px 0;
   overflow: hidden;
+  position: relative;
   animation: slideMenu 2s ease-in-out forwards;
+}
+.menu_contenu:hover .menu_check {
+  transform: translateX(0px);
 }
 .menu_contenu .menu_plat {
   width: 70%;
@@ -323,11 +327,16 @@ footer a:visited, footer a:link, footer a:active {
 
 .menu_check {
   background-color: #99E2D0;
-  margin: -15px -15px -15px 10px;
-  width: 50px;
+  width: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transition-duration: 600ms;
+  transform: translateX(60px);
 }
 .menu_check .menu_check_icone {
   color: white;
