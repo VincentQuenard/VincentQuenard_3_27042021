@@ -12,8 +12,7 @@
 }
 /*mise en forme commune de la photo pour chaque restaurant*/
 .photo_restaurant{
-    
-    position: relative;
+     position: relative;
 
     img{
         height: 300px;
@@ -29,17 +28,19 @@
     h1{
         font-family: "Shrikhand";
         font-size: 1.7rem;
-    }
-    .fa-heart{
-        font-size: 25px;
-        padding-top: 10px;
-
-    }
-    .coeur{
-        &:hover{
-            background: linear-gradient(to bottom, $couleur_secondaire, $couleur_primaire) ;
-        }
-
+    }  
+}
+.fa-heart{
+    font-size: 25px;
+    padding-top: 10px;
+    /*Remplissage du coeur au survol*/
+    &:hover{
+        background: linear-gradient($couleur_secondaire, $couleur_primaire) ;
+        background-clip: text;
+        color: transparent;
+        -webkit-background-clip: text;
+        transition: all 2s ease-in-out;
+        font-weight: 900;
     }
 }
 
@@ -78,7 +79,7 @@
     
     }
 }
-/* Mise en forme de chaque plat (titre, accompagnement, prix*/
+/* Mise en forme de chaque plat (titre, accompagnement, prix)*/
 .menu_contenu{
     background-color: $couleur_blanche;
     border-radius: 20px;
@@ -96,6 +97,9 @@
     }
     &:hover .menu_check_icone{
         transform: rotate(0deg);
+    }
+    &:hover .menu_prix{
+        transform: translateX(-50px);
     }
     
     /*Animation de l'arrivée progressive des menus au chargement de la page*/
@@ -117,6 +121,9 @@
         font-weight: bold;
         display: flex;
         align-items: flex-end;
+        transition-duration: 600ms;
+    transform: translateX(0px);
+        
     }
 }
 

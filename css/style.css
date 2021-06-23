@@ -264,12 +264,19 @@ footer a:visited, footer a:link, footer a:active {
   font-family: "Shrikhand";
   font-size: 1.7rem;
 }
-.nom_restaurant .fa-heart {
+
+.fa-heart {
   font-size: 25px;
   padding-top: 10px;
+  /*Remplissage du coeur au survol*/
 }
-.nom_restaurant .coeur:hover {
-  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+.fa-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 2s ease-in-out;
+  font-weight: 900;
 }
 
 /*Mise en forme du contenu global des menus*/
@@ -305,7 +312,7 @@ footer a:visited, footer a:link, footer a:active {
   bottom: 0;
 }
 
-/* Mise en forme de chaque plat (titre, accompagnement, prix*/
+/* Mise en forme de chaque plat (titre, accompagnement, prix)*/
 .menu_contenu {
   background-color: white;
   border-radius: 20px;
@@ -327,6 +334,9 @@ footer a:visited, footer a:link, footer a:active {
 .menu_contenu:hover .menu_check_icone {
   transform: rotate(0deg);
 }
+.menu_contenu:hover .menu_prix {
+  transform: translateX(-50px);
+}
 .menu_contenu .menu_plat {
   width: 80%;
 }
@@ -339,6 +349,8 @@ footer a:visited, footer a:link, footer a:active {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
+  transition-duration: 600ms;
+  transform: translateX(0px);
 }
 
 /*Mise place de la coche cachée sans clic*/
