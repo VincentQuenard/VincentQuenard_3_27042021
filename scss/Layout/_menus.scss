@@ -84,14 +84,18 @@
     margin: 10px 0 20px 0;
     overflow: hidden;
     position: relative;
+
     &:hover .menu_check{
         transform: translateX(0px);
+    }
+    &:hover .menu_check_icone{
+        transform: rotate(0deg);
     }
     
     animation: slideMenu 2s ease-in-out forwards;
     
     .menu_plat {
-        width: 70%;
+        width: 80%;
         h3 ,p{
         white-space: nowrap;
         overflow: hidden;
@@ -111,7 +115,6 @@
       }
     
     .menu_prix{
-        
         font-weight: bold;
         display: flex;
         align-items: flex-end;
@@ -136,7 +139,10 @@
 
     .menu_check_icone{
         color: $couleur_blanche;
-        font-size: x-large;    
+        font-size: x-large;
+        transition-duration: 600ms;
+        transform: rotate(360deg);
+
     }
 }
 

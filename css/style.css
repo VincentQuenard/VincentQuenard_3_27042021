@@ -301,8 +301,11 @@ footer a:visited, footer a:link, footer a:active {
 .menu_contenu:hover .menu_check {
   transform: translateX(0px);
 }
+.menu_contenu:hover .menu_check_icone {
+  transform: rotate(0deg);
+}
 .menu_contenu .menu_plat {
-  width: 70%;
+  width: 80%;
 }
 .menu_contenu .menu_plat h3, .menu_contenu .menu_plat p {
   white-space: nowrap;
@@ -341,6 +344,8 @@ footer a:visited, footer a:link, footer a:active {
 .menu_check .menu_check_icone {
   color: white;
   font-size: x-large;
+  transition-duration: 600ms;
+  transform: rotate(360deg);
 }
 
 .btn_menu {
