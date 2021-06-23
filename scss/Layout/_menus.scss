@@ -1,3 +1,6 @@
+/*style des pages des restaurants*/
+
+/*Bouton de retour vers l'index*/
 .btn_vers_index{
     position: absolute;
     left: 15px;
@@ -6,9 +9,8 @@
         font-size: 20px;
         color: black;
     }
-
 }
-
+/*mise en forme commune de la photo pour chaque restaurant*/
 .photo_restaurant{
     
     position: relative;
@@ -20,7 +22,7 @@
     }
 }
 
-
+/* Titre du restaurant avec un coeur à coté pour "j'aime" utilisateur*/
 .nom_restaurant{
     display: flex;
     justify-content: space-between;
@@ -41,6 +43,7 @@
     }
 }
 
+/*Mise en forme du contenu global des menus*/
 .menu{
     background-color: $couleur_background;
     border-radius: 30px;
@@ -54,6 +57,7 @@
 
 }
 
+/* titre entrée plat dessert*/
 .menu_sorte{
     h2{
     text-transform: uppercase;
@@ -62,6 +66,7 @@
     padding-bottom: 10px;
     position :relative
 }
+/*petite barre verte sous entée plat dessert*/
     ::after{
         content: "";
         width: 2.8rem;
@@ -73,7 +78,7 @@
     
     }
 }
-
+/* Mise en forme de chaque plat (titre, accompagnement, prix*/
 .menu_contenu{
     background-color: $couleur_blanche;
     border-radius: 20px;
@@ -85,6 +90,7 @@
     overflow: hidden;
     position: relative;
 
+    /* déclenchement du check et rotation de l'icone associée au survol*/
     &:hover .menu_check{
         transform: translateX(0px);
     }
@@ -92,8 +98,11 @@
         transform: rotate(0deg);
     }
     
+    /*Animation de l'arrivée progressive des menus au chargement de la page*/
     animation: slideMenu 2s ease-in-out forwards;
     
+
+    /*Mise en forme des plats et prix avec 3. lorsque la taille du conteneur est trop petit pour le contenu*/
     .menu_plat {
         width: 80%;
         h3 ,p{
@@ -102,17 +111,7 @@
         text-overflow: ellipsis;
         }
     }
-    @keyframes slideMenu {
-        0% {
-          opacity: 0;
-          transform: translateY(-40px);
-        }
-      
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+   
     
     .menu_prix{
         font-weight: bold;
@@ -120,6 +119,8 @@
         align-items: flex-end;
     }
 }
+
+/*Mise place de la coche cachée sans clic*/
 .menu_check{
     
     background-color: $couleur_tertiaire;
@@ -146,7 +147,7 @@
     }
 }
 
-
+/*style du bouton commander qui s'éclaircit avec ombre plus intense au clic*/
 .btn_menu{
     display: flex;
     align-items: center;

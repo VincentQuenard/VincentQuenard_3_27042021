@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*Normalisation des styles des navigateurs et retrait des soulignements des liens*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 *,
 *::before,
@@ -13,10 +15,12 @@ a:link {
 }
 
 /*Couleurs du site*/
+/*Police par défaut du contenu du site*/
 body {
   font-family: "Roboto", sans-serif;
 }
 
+/*Mise en page de l'entête du site avec le logo ohmyfood*/
 .entete {
   display: flex;
   align-items: center;
@@ -25,6 +29,7 @@ body {
   position: relative;
 }
 
+/* Partie localisation paris belleville*/
 .localisation {
   display: flex;
   align-items: center;
@@ -37,6 +42,7 @@ body {
   padding-right: 10px;
 }
 
+/*Mise en forme de la partie réservation*/
 .reservation {
   padding: 10px 30px 50px 30px;
   background-color: #F6F6F6;
@@ -52,6 +58,7 @@ body {
   margin-bottom: 30px;
 }
 
+/*Style du bouton explorer nos restaurants avec son effet au survol */
 .btn1 {
   display: flex;
   align-items: center;
@@ -71,6 +78,7 @@ body {
   box-shadow: 3px 5px 5px #b9b9b9;
 }
 
+/*Mise en forme de la partie fonctionnement et des 3 "boutons"*/
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -126,6 +134,7 @@ body {
     padding-top: 50px;
   }
 }
+/*Mise en forme de la partie restaurant avec photos et lien vers page dédiée au clic sur photo*/
 .restaurants {
   background-color: #F6F6F6;
   padding: 0px 10px 50px 10px;
@@ -199,6 +208,7 @@ body {
     padding-right: 10px;
   }
 }
+/*Mise en page du footer commun à toutes les pages*/
 footer {
   background-color: #404040;
   color: white;
@@ -224,6 +234,8 @@ footer a:visited, footer a:link, footer a:active {
     justify-content: space-around;
   }
 }
+/*style des pages des restaurants*/
+/*Bouton de retour vers l'index*/
 .btn_vers_index {
   position: absolute;
   left: 15px;
@@ -233,6 +245,7 @@ footer a:visited, footer a:link, footer a:active {
   color: black;
 }
 
+/*mise en forme commune de la photo pour chaque restaurant*/
 .photo_restaurant {
   position: relative;
 }
@@ -242,6 +255,7 @@ footer a:visited, footer a:link, footer a:active {
   object-fit: cover;
 }
 
+/* Titre du restaurant avec un coeur à coté pour "j'aime" utilisateur*/
 .nom_restaurant {
   display: flex;
   justify-content: space-between;
@@ -258,6 +272,7 @@ footer a:visited, footer a:link, footer a:active {
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
 }
 
+/*Mise en forme du contenu global des menus*/
 .menu {
   background-color: #F6F6F6;
   border-radius: 30px;
@@ -269,6 +284,10 @@ footer a:visited, footer a:link, footer a:active {
   margin-top: 50px;
 }
 
+/* titre entrée plat dessert*/
+.menu_sorte {
+  /*petite barre verte sous entée plat dessert*/
+}
 .menu_sorte h2 {
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -286,6 +305,7 @@ footer a:visited, footer a:link, footer a:active {
   bottom: 0;
 }
 
+/* Mise en forme de chaque plat (titre, accompagnement, prix*/
 .menu_contenu {
   background-color: white;
   border-radius: 20px;
@@ -296,7 +316,10 @@ footer a:visited, footer a:link, footer a:active {
   margin: 10px 0 20px 0;
   overflow: hidden;
   position: relative;
+  /* déclenchement du check et rotation de l'icone associée au survol*/
+  /*Animation de l'arrivée progressive des menus au chargement de la page*/
   animation: slideMenu 2s ease-in-out forwards;
+  /*Mise en forme des plats et prix avec 3. lorsque la taille du conteneur est trop petit pour le contenu*/
 }
 .menu_contenu:hover .menu_check {
   transform: translateX(0px);
@@ -312,22 +335,13 @@ footer a:visited, footer a:link, footer a:active {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-@keyframes slideMenu {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .menu_contenu .menu_prix {
   font-weight: bold;
   display: flex;
   align-items: flex-end;
 }
 
+/*Mise place de la coche cachée sans clic*/
 .menu_check {
   background-color: #99E2D0;
   width: 60px;
@@ -348,6 +362,7 @@ footer a:visited, footer a:link, footer a:active {
   transform: rotate(360deg);
 }
 
+/*style du bouton commander qui s'éclaircit avec ombre plus intense au clic*/
 .btn_menu {
   display: flex;
   align-items: center;
@@ -408,6 +423,7 @@ footer a:visited, footer a:link, footer a:active {
     height: 100%;
   }
 }
+/*Loader spinner au chargement de la page index.html*/
 .loader {
   display: flex;
   flex-direction: column;
@@ -421,15 +437,7 @@ footer a:visited, footer a:link, footer a:active {
   animation: apparition 0.2s 3s ease-in-out normal forwards;
 }
 
-@keyframes apparition {
-  from {
-    opacity: 100%;
-  }
-  to {
-    opacity: 0%;
-    visibility: hidden;
-  }
-}
+/*Mise en forme de la phrase du loader*/
 .loader_titre {
   font-family: "Shrikhand";
   color: white;
@@ -438,6 +446,7 @@ footer a:visited, footer a:link, footer a:active {
   padding-bottom: 50px;
 }
 
+/*Mise en place du conteneur des balles et des 3 balles rebondissantes*/
 .LoaderBalls {
   width: 180px;
   display: flex;
@@ -466,12 +475,34 @@ footer a:visited, footer a:link, footer a:active {
   animation: balles 0.4s alternate infinite cubic-bezier(0.6, 0.05, 0.15, 0.95);
 }
 
+/*Gestion apparition et disparition loader*/
+@keyframes apparition {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+/*Rebond des balles du loader*/
 @keyframes balles {
   0% {
     transform: translate3d(0, 10px, 0) scale(1.2, 0.85);
   }
   100% {
     transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
+  }
+}
+/*Effet d'apparition progessive des menus par groupes*/
+@keyframes slideMenu {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

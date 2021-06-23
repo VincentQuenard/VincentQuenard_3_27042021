@@ -1,4 +1,4 @@
-
+/*Loader spinner au chargement de la page index.html*/
 .loader{
     display: flex;
     flex-direction: column;
@@ -12,16 +12,8 @@
     animation: apparition 0.2s 3s ease-in-out normal forwards;
 }
 
-@keyframes apparition {
-    from {
-      opacity: 100%;
-    }
-    to {
-      opacity: 0%;
-      visibility: hidden;
-    }
-  }
 
+  /*Mise en forme de la phrase du loader*/
   .loader_titre {
     font-family: "Shrikhand";
     color: $couleur_blanche;
@@ -30,7 +22,7 @@
     padding-bottom: 50px;
   }
 
-
+  /*Mise en place du conteneur des balles et des 3 balles rebondissantes*/
   .LoaderBalls {
 	width: 180px;
 	display: flex;
@@ -65,14 +57,5 @@
     }
 }
 
-@keyframes balles {
 
-	0% {
-		transform: translate3d(0, 10px, 0) scale(1.2, 0.85);
-	}
-
-	100% {
-		transform: translate3d(0, -20px, 0) scale(0.9, 1.1);
-	}
-}
 

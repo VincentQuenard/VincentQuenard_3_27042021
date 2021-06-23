@@ -1,4 +1,4 @@
-
+/*Mise en forme de la partie fonctionnement et des 3 "boutons"*/
 .fonctionnement{
     display: flex;
     flex-direction: column;
@@ -42,9 +42,7 @@
         .description{
           font-weight: bold;
         }
-     
-    }
-     
+    } 
   }
   
   @media (min-width: 770px){
