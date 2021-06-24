@@ -33,12 +33,14 @@
 .fa-heart{
     font-size: 25px;
     padding-top: 10px;
+
     /*Remplissage du coeur au survol*/
     &:hover{
         background: linear-gradient($couleur_secondaire, $couleur_primaire) ;
-        background-clip: text;
+       /* background-clip: text;*/
         color: transparent;
         -webkit-background-clip: text;
+        -moz-background-clip: text;
         transition: all 2s ease-in-out;
         font-weight: 900;
     }
@@ -108,7 +110,7 @@
 
     /*Mise en forme des plats et prix avec 3. lorsque la taille du conteneur est trop petit pour le contenu*/
     .menu_plat {
-        width: 80%;
+        width: 75%;
         h3 ,p{
         white-space: nowrap;
         overflow: hidden;
@@ -118,6 +120,7 @@
    
     
     .menu_prix{
+        width: 10%;
         font-weight: bold;
         display: flex;
         align-items: flex-end;

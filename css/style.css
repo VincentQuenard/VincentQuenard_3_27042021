@@ -272,9 +272,10 @@ footer a:visited, footer a:link, footer a:active {
 }
 .fa-heart:hover {
   background: linear-gradient(#FF79DA, #9356DC);
-  background-clip: text;
+  /* background-clip: text;*/
   color: transparent;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   transition: all 2s ease-in-out;
   font-weight: 900;
 }
@@ -337,15 +338,16 @@ footer a:visited, footer a:link, footer a:active {
 .menu_contenu:hover .menu_prix {
   transform: translateX(-50px);
 }
-.menu_contenu .menu_plat {
-  width: 80%;
+.menu_contenu .menu_plat:hover {
+  width: 75%;
 }
-.menu_contenu .menu_plat h3, .menu_contenu .menu_plat p {
+.menu_contenu .menu_plat:hover h3, .menu_contenu .menu_plat:hover p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu_contenu .menu_prix {
+  width: 10%;
   font-weight: bold;
   display: flex;
   align-items: flex-end;
