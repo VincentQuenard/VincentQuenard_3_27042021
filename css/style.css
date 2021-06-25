@@ -325,6 +325,7 @@ footer a:visited, footer a:link, footer a:active {
   overflow: hidden;
   position: relative;
   /* déclenchement du check et rotation de l'icone associée au survol*/
+  /*Redimensionnement de menu plat pour rogner au déclenchement de la coche*/
   /*Animation de l'arrivée progressive des menus au chargement de la page*/
   animation: slideMenu 2s ease-in-out forwards;
   /*Mise en forme des plats et prix avec 3. lorsque la taille du conteneur est trop petit pour le contenu*/
@@ -336,18 +337,17 @@ footer a:visited, footer a:link, footer a:active {
   transform: rotate(0deg);
 }
 .menu_contenu:hover .menu_prix {
-  transform: translateX(-50px);
+  transform: translateX(-60px);
 }
-.menu_contenu .menu_plat:hover {
-  width: 75%;
+.menu_contenu:hover .menu_plat {
+  width: 70%;
 }
-.menu_contenu .menu_plat:hover h3, .menu_contenu .menu_plat:hover p {
+.menu_contenu:hover .menu_plat h3, .menu_contenu:hover .menu_plat p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu_contenu .menu_prix {
-  width: 10%;
   font-weight: bold;
   display: flex;
   align-items: flex-end;

@@ -101,32 +101,31 @@
         transform: rotate(0deg);
     }
     &:hover .menu_prix{
-        transform: translateX(-50px);
+        transform: translateX(-60px);
     }
+
+    /*Redimensionnement de menu plat pour rogner au déclenchement de la coche*/
+    &:hover .menu_plat{
+        width: 70%;
+        h3 ,p{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+}
     
     /*Animation de l'arrivée progressive des menus au chargement de la page*/
     animation: slideMenu 2s ease-in-out forwards;
     
 
     /*Mise en forme des plats et prix avec 3. lorsque la taille du conteneur est trop petit pour le contenu*/
-    .menu_plat {
-        width: 75%;
-        h3 ,p{
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        }
-    }
-   
-    
-    .menu_prix{
-        width: 10%;
+     .menu_prix{
         font-weight: bold;
         display: flex;
         align-items: flex-end;
         transition-duration: 600ms;
-    transform: translateX(0px);
-        
+        transform: translateX(0px);
     }
 }
 
