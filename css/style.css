@@ -340,9 +340,17 @@ footer a:visited, footer a:link, footer a:active {
   transform: translateX(-60px);
 }
 .menu_contenu:hover .menu_plat {
-  width: 70%;
+  width: 67%;
 }
 .menu_contenu:hover .menu_plat h3, .menu_contenu:hover .menu_plat p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu_contenu .menu_plat {
+  width: 80%;
+}
+.menu_contenu .menu_plat h3, .menu_contenu .menu_plat p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -397,7 +405,7 @@ footer a:visited, footer a:link, footer a:active {
   box-shadow: 3px 5px 5px #b9b9b9;
 }
 
-@media (min-width: 770px) {
+@media (min-width: 1100px) {
   .nom_restaurant {
     justify-content: space-around;
   }
