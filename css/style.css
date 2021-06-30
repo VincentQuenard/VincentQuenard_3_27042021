@@ -441,7 +441,7 @@ footer a:visited, footer a:link, footer a:active {
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   position: fixed;
   z-index: 200;
-  animation: apparition 0.2s 3s ease-in-out normal forwards;
+  animation: apparition 0.2s 3s ease-in-out forwards;
 }
 
 /*Mise en forme de la phrase du loader*/
