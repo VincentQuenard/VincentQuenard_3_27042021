@@ -62,12 +62,12 @@
 
 /* titre entrée plat dessert*/
 .menu_sorte{
+    position :relative;
     h2{
     text-transform: uppercase;
     font-size: 1.1rem;
     font-weight: 500;
     padding-bottom: 10px;
-    position :relative
 }
 /*petite barre verte sous entée plat dessert*/
     ::after{
