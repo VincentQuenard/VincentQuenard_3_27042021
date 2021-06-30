@@ -265,21 +265,6 @@ footer a:visited, footer a:link, footer a:active {
   font-size: 1.7rem;
 }
 
-.fa-heart {
-  font-size: 25px;
-  padding-top: 10px;
-  /*Remplissage du coeur au survol*/
-}
-.fa-heart:hover {
-  background: linear-gradient(#FF79DA, #9356DC);
-  /* background-clip: text;*/
-  color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  transition: all 2s ease-in-out;
-  font-weight: 900;
-}
-
 /*Mise en forme du contenu global des menus*/
 .menu {
   background-color: #F6F6F6;
@@ -526,6 +511,21 @@ footer a:visited, footer a:link, footer a:active {
     opacity: 1;
     transform: translateY(0);
   }
+}
+/*Coeur présent sur toutes les pages*/
+.fa-heart {
+  font-size: 25px;
+  padding-top: 10px;
+  /*Remplissage du coeur au survol*/
+}
+.fa-heart:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* background-clip: text;*/
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  transition: all 2s ease-in-out;
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=style.css.map */

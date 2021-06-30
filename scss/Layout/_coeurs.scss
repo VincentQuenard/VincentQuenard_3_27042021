@@ -1,0 +1,17 @@
+/*Coeur présent sur toutes les pages*/
+
+.fa-heart{
+    font-size: 25px;
+    padding-top: 10px;
+
+    /*Remplissage du coeur au survol*/
+    &:hover{
+        background: linear-gradient($couleur_secondaire, $couleur_primaire) ;
+       /* background-clip: text;*/
+        color: transparent;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        transition: all 2s ease-in-out;
+        font-weight: 900;
+    }
+}
