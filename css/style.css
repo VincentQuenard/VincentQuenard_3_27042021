@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+body {
+  cursor: pointer;
+}
+
 a:link {
   text-decoration: none;
   color: black;
@@ -67,6 +71,7 @@ body {
   height: 40px;
   width: 180px;
   margin: auto;
+  cursor: pointer;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
   border: none;
@@ -378,6 +383,7 @@ footer a:visited, footer a:link, footer a:active {
   height: 60px;
   width: 180px;
   margin: 50px auto 50px auto;
+  cursor: pointer;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
   border: none;
