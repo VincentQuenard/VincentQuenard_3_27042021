@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+main, header, footer {
+  max-width: 1500px;
+  margin: auto;
+}
+
 body {
   cursor: pointer;
 }
